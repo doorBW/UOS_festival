@@ -56,6 +56,23 @@
 - 1~2인이 Back-end로 참여하여 Flask를 이용한다.
 - 4~5인이 Front-end로 참여한다. 간단한 JS를 포함한, html, css를 활용한다.
 
+####개발 포지션
+Front-end: 박민승, 차상원, 신민정
+Back-end: 문범우, 최희재, 박건주, 강솔
+
+####초기 셋팅
+작업은 각자 C9에서 워크스페이스를 생성하여 진행합니다.
+워크스페이스 생성시 github 주소를 클론하여 생성합니다.
+ruby -v
+#2.4.1이 아니면,
+rvm install ruby-2.4.1
+ruby -v #2.4.1
+
+rails -v
+#5.0.6이 아니거나 rails 설치가 안되어 있다고 나오면,
+gem install rails --version 5.0.6 --no-ri --no-rdoc
+bundle update
+rails -v #5.0.6
 
 
 ##### 안내 사항
