@@ -47,6 +47,10 @@
 .lineup_main{
     /*border : 1px solid black;*/
     /*border-radius: 5%;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8)),
+        url('/schedule.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin : 30px;
     padding : 20px;
     padding-top: 30px;
@@ -79,14 +83,18 @@
     margin-left: 20px;
 }
 
-.lineup_time, .day, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+.lineup_time, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
     color: yellow;
     font-family: 'Sunflower', sans-serif;
 }
 
+.lineup_uos, .day{
+    color: yellow;
+}
+
 .lineup_wrap{
     background-color : black;
-    z-index : 3;
+    /*z-index : 3;*/
 }
 
 /*================================ lineup===================================================================*/
