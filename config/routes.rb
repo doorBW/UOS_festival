@@ -3,6 +3,14 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get 'home/index'
   root 'home#index'
+  
+  get '/festival/booth' => 'home#booth'
+  
+  get '/gestival/lineup' => 'home#lineup'
+  
+  
+  
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
