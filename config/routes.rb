@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   get '/festival/event' => 'home#event'
   get '/festival/schedule' => 'home#schedule'
   
- 
 end
