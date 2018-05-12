@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+    <title>Workspace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  
+    <style>
+    
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
+      html{
+        height: -webkit-fill-available;
+      }
+      body{
+        background-color: black;
+        height: 100%;
+      }
+      .nevi{
+        display : flex;
+        position: fixed;
+        height: 200px;
+        bottom: 0.1%;
+        width: 96%;
+        justify-content: space-around;
+        text-align: center;
+      }
+      .nev_block {
+        width: 150px;
+        height: 150px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 10px solid white;
+      }
+
+      .nimg1{
+        background-image: url("/gp1.jpg");
+        opacity: 0.9;
+      }
+      .nimg2{
+        background-image: url('/img1.png');
+        opacity: 0.9;
+      }
+      .nimg3{
+        background-image: url('/img2.png');
+        opacity: 0.9;
+      }
+      .nimg4{
+        background-image: url('/img3.png');
+        opacity: 0.9;
+      }
+      .nimg5{
+        background-image: url('/img4.png');
+        opacity: 0.9;
+      }
+  </style>
+
+
+
 </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("body").fadeIn(1000);
+      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").click(function(){
+        // $(this).css("opacity", "1.0");
+        $(this).animate({
+          opacity: '1.0',
+          height: '180px',
+          width: '180px'
+        });
+      });
+      // $(".nimg1, .nimg2, .nimg3, .nimg4").mouseout(function(){
+      //   $(this).css("font-weight", "lighter");
+      //   $(this).animate({
+      //   opacity: '0.8',
+      //   height: '100px',
+      //   width: '100px'
+      //   });
+      // });
+    })
+  </script>
+</script>
+
 <body>
+<!-- 네비 bar -->
+
 
 <%= yield %>
+
+
+
 
 </body>
 </html>
