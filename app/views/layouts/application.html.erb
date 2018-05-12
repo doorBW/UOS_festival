@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Workspace</title>
+    <title>Schedule</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -19,11 +19,16 @@
         height: -webkit-fill-available;
         background-color: black;
       }
+<<<<<<< HEAD
+      
+=======
 
+>>>>>>> 92ff8f821a211c36d8aa91f9288c62848d652368
       body{
         background-color: black;
         height: 100%;
       }
+      
       .nevi{
         display : flex;
         position: fixed;
@@ -39,7 +44,7 @@
         border-radius: 30px;
         background-repeat: no-repeat;
         background-size: cover;
-        border: 10px solid white;
+        border: 5px solid white;
       }
 
       .nimg1{
@@ -62,6 +67,74 @@
         background-image: url('/img4.png');
         opacity: 0.9;
       }
+      
+      
+      /*스케줄 페이지*/
+      .sche_main{
+        height : -webkit-fill-available;
+        color: yellow;
+        line-height: 2.5;
+        font-family: 'Do Hyeon', sans-serif;
+      }
+      
+      .sche_day{
+        
+      }
+      
+      .sche_day_title{
+        display: black;
+        margin: 0 auto;
+        width: 150px;
+        height: 45px;
+        font-weight: 400;
+        font-size: 35px;
+        line-height:1;
+        color: black;
+        text-align: center;
+        background-color: yellow;
+        border-radius: 25pt;
+        justify-content : space-around;
+      }
+      .sche_box{
+        margin-top:10px;
+        display:flex;
+        justify-content: space-around;
+      }
+      .sche_ball{
+        display : inline-block;
+      }
+      .sche_content_box{
+        display: flex;
+        width:  250px;
+        height: 250px;
+        flex-direction: column;
+        align-items : center;
+        justify-content : space-around;
+        border-radius : 100%;
+        border: 5px solid white;
+      }
+      .sche_content_box4{
+        display: flex;
+        width:  220px;
+        height: 220px;
+        flex-direction: column;
+        align-items : center;
+        justify-content : space-around;
+        border-radius : 100%;
+        border: 5px solid white;
+      }
+      .sche_time{
+        margin-top: 20pt;
+        font-size: 25pt;
+      }
+      
+      .sche_content{
+        font-size: 20pt;
+        margin-bottom: 20pt;
+        line-height: 1.2;
+        color : white;
+        text-align: center;
+      }
   </style>
 
 
@@ -70,7 +143,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $("body").fadeIn(1000);
       $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").click(function(){
         $(this).animate({
           opacity: '1.0',
