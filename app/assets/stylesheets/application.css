@@ -16,7 +16,27 @@
 
 /*================================ lineup===================================================================*/
 
+a{
+        color: black;
+        text-decoration: none;
+}
+      a:visited{
+        color: black;
+}
+      a:hover{
+        color: black;
+}
 
+.developer_info{
+    font-size: 60px;
+    color: yellow;
+    margin: 10px;
+    padding-top: 50px;
+    text-align: center;
+    font-family:'drfont_daraehand';
+}
+
+@font-face { font-family: 'drfont_daraehand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff'); font-weight: normal; font-style: normal; }
 /*================lineup_header=============================*/
 .clearfix::after {
     content: "";
@@ -33,12 +53,12 @@
 
 .lineup_uos{
     width: 100%;
-    font-size : 90px;
+    font-size : 65px;
     padding-left : 20px;
 }
 
 .lineup_uos_font{
-    font-family: 'Nanum Brush Script';
+    font-family: 'drfont_daraehand';
 
 }
 
@@ -111,6 +131,24 @@ main{
     background-color : black;
     
 }
+
+.booth_img{
+    padding-top: 30px;
+    width: 850px;
+    height: auto;
+}
+
+.list{
+    background-color: black;
+    font-family: 'Do Hyeon';
+    color: rgb(235,214,41);
+    justify-content: center;
+    bottom:0;
+    display:flex;
+    font-size: 30pt;
+                
+}
+
 
 /*================================ lineup===================================================================*/
 
