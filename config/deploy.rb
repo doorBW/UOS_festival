@@ -4,6 +4,8 @@ lock "~> 3.10.2"
 set :application, "UOS_festival"
 set :repo_url, "git@github.com:doorBW/UOS_festival.git"
 set :deploy_to, "/home/ec2-user/UOS_festival"
+
+load 'lib/capistrano/tasks/seed.rb'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
