@@ -10,11 +10,15 @@
     <style>
     
     @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
+    
+      body{
+        background-color: black;
+        height:-webkit-fill-available;
+      }
       .nevi{
         display : flex;
         position: fixed;
-        height:200px;
-        background-color : white;
+        height: 200px;
         bottom: 5%;
         width: 96%;
         justify-content: space-around;
@@ -26,27 +30,28 @@
         border-radius: 30px;
         background-repeat: no-repeat;
         background-size: cover;
+        border: 10px solid white;
       }
 
       .nimg1{
         background-image: url("/gp1.jpg");
-        opacity: 0.8;
+        opacity: 0.9;
       }
       .nimg2{
         background-image: url('/img1.png');
-        opacity: 0.8;
+        opacity: 0.9;
       }
       .nimg3{
         background-image: url('/img2.png');
-        opacity: 0.8;
+        opacity: 0.9;
       }
       .nimg4{
         background-image: url('/img3.png');
-        opacity: 0.8;
+        opacity: 0.9;
       }
       .nimg5{
         background-image: url('/img4.png');
-        opacity: 0.8;
+        opacity: 0.9;
       }
   </style>
 
@@ -57,12 +62,12 @@
   <script>
     $(document).ready(function(){
       $("body").fadeIn(1000);
-      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").mouseover(function(){
+      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").click(function(){
         // $(this).css("opacity", "1.0");
         $(this).animate({
-        opacity: '1.0',
-        height: '180px',
-        width: '180px'
+          opacity: '1.0',
+          height: '180px',
+          width: '180px'
         });
       });
       // $(".nimg1, .nimg2, .nimg3, .nimg4").mouseout(function(){
@@ -78,25 +83,13 @@
 </script>
 
 <body>
+<!-- 네비 bar -->
+
 
 <%= yield %>
 
 
 
-<!-- 네비 bar -->
-  <div class="nevi">
-    
-    <a href = "/"><div class="nev_block nimg1">
-    </div></a>
-    <a href = "/festival/lineup"> <div class="nev_block nimg2">
-    </div></a>
-    <a href = "/festival/booth"><div class="nev_block nimg3">
-    </div></a>
-    <a href = "/festival/schedule"><div class="nev_block nimg4">
-    </div></a>
-    <a href = "/festival/event"><div class="nev_block nimg5">
-    </div></a>
-  </div>
 
 </body>
 </html>
