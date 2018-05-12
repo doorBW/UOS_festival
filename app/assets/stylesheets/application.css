@@ -33,8 +33,13 @@
 
 .lineup_uos{
     width: 100%;
-    font-size : 30pt;
+    font-size : 90px;
     padding-left : 20px;
+}
+
+.lineup_uos_font{
+    font-family: 'Nanum Brush Script';
+
 }
 
 /*======================lineup_main========================*/
@@ -44,11 +49,17 @@
     height: auto;
 }
 main{
-    height: -webkit-fill-available;
+    /*height: -webkit-fill-available;*/
 }
+
+.lineup_back{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8)),
+        url('/back_to_the_future.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .lineup_main{
-    /*border : 1px solid black;*/
-    /*border-radius: 5%;*/
     height: 100%;
     margin : 30px;
     padding : 20px;
@@ -82,14 +93,18 @@ main{
     margin-left: 20px;
 }
 
-.lineup_time, .day, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+.lineup_time, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
     color: yellow;
     font-family: 'Sunflower', sans-serif;
 }
 
+.lineup_uos, .day{
+    color: yellow;
+}
+
 .lineup_wrap{
     background-color : black;
-    z-index : 3;
+    
 }
 
 /*================================ lineup===================================================================*/

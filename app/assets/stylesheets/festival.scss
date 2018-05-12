@@ -1,0 +1,113 @@
+
+
+.festival_menu_schedule {
+    display: flex;
+    flex-direction: row;
+    margin-left:20%;
+    margin-top:5%;
+}
+
+.festival_menu_booth {
+    margin-left:10%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.festival_menu_line_up {
+    margin-left:20%;
+}
+
+.festival_menu_event {
+    margin-left:10%;
+}
+
+.festival_schedule_1 {
+    width:300px;
+    height:300px;
+}
+
+.festival_booth_1 {
+    width:320px;
+    height:300px;
+}
+
+.festival_line_up_1 {
+    width:300px;
+    height:300px;
+}
+
+.festival_event_1 {
+    width:300px;
+    height:300px;
+}
+
+
+.festival_logo_1 {
+	display:block;
+	height:300px;
+	width:900px;
+	margin:0 auto;
+	
+}
+
+.festival_click {
+    color: yellow;
+    font-size:30pt;
+    margin-left: 3%;
+    height:100px;
+    width:100%;
+}
+
+.festival_arrow_1, .festival_arrow_2, .festival_arrow_3 {
+    width:200px;
+    height:100px;
+}
+
+.festival_arrow {
+    color:yellow;
+   
+}
+
+.festival_image_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left:5%;
+}
+
+.festival_image_wrap_2 {
+   	display: flex;
+   	flex-direction:row ;
+}
+
+.festival_image_wrap_3 {
+   	display: flex;
+   	flex-direction: row;
+}
+
+.festival_singer_1 {
+   	margin-left:20%;
+   	margin-top:30%;
+}
+
+.festival_image_wrap_4 {
+   	display:flex;
+   	flex-direction: row;
+}
+
+.festival_people_1 {
+   	margin-top:20%;
+}
+
+.festival_line_up_1 {
+   	margin-top:9%;
+}
+
+.festival_day {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 40pt;
+    color:yellow;
+    text-align:center;
+    height:30px;
+    margin-bottom:3%;
+   }
