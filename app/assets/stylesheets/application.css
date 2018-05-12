@@ -33,8 +33,13 @@
 
 .lineup_uos{
     width: 100%;
-    font-size : 70px;
+    font-size : 90px;
     padding-left : 20px;
+}
+
+.lineup_uos_font{
+    font-family: 'Nanum Brush Script';
+
 }
 
 /*======================lineup_main========================*/
