@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
+
+html body {
+    background: black;
+}
+
+.uos_likelion_logo{
+    height: 200px;
+    width: 200px;
+}
+
+// event CSS start
+.event_head_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.event_header{
+    font-size: 70px;
+    color: yellow;
+    margin: 0;
+    text-align: center;
+}
+.event_item{
+    background: white;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    // box-shadow: 10px 10px #c0c0c0;
+    border-radius: 10px 10px;
+    height: auto;
+    padding: 15px;
+}
+.event_logo_img{
+    height: 100px;
+    width: 100px;
+}
+.event_item_name{
+    color: black;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Do Hyeon';
+    line-height: 1;
+}
+.event_item_info{
+    color: gray;
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Do Hyeon';
+    line-height: 1;
+}
+.event_item_content{
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    font-family: 'Sunflower';
+}
+.event_footer{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Sunflower';
+}
+// event CSS end
