@@ -49,7 +49,7 @@ main{
 
 .lineup_back{
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8)),
-        url('/back to the future.jpg');
+        url('/back_to_the_future.jpg');
     background-size: contain;
     background-repeat: no-repeat;
 }
