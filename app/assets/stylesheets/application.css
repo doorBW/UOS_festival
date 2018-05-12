@@ -44,19 +44,18 @@
     height: auto;
 }
 main{
-    height: -webkit-fill-available;
+    /*height: -webkit-fill-available;*/
 }
-.lineup_main{
-    /*border : 1px solid black;*/
-    /*border-radius: 5%;*/
 
+.lineup_back{
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8)),
-        url('/backtothe.png');
-    background-size: cover;
+        url('/back to the future.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
-    
-    height: 100%;
+}
 
+.lineup_main{
+    height: 100%;
     margin : 30px;
     padding : 20px;
     padding-top: 30px;
@@ -100,7 +99,7 @@ main{
 
 .lineup_wrap{
     background-color : black;
-    /*z-index : 3;*/
+    
 }
 
 /*================================ lineup===================================================================*/
