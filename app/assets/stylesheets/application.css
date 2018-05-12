@@ -17,7 +17,7 @@
 /*================================ lineup===================================================================*/
 
 
-/*================header=============================*/
+/*================lineup_header=============================*/
 .clearfix::after {
     content: "";
     clear: both;
@@ -37,13 +37,14 @@
     padding-left : 20px;
 }
 
+/*======================lineup_main========================*/
 
 .lineup_logo_img{
     width:20%;
     height: auto;
 }
 
-.lineup_wrap{
+.lineup_main{
     /*border : 1px solid black;*/
     /*border-radius: 5%;*/
     margin : 30px;
@@ -53,7 +54,7 @@
 
 .day{
     font-size: 20pt;
-    border : 1px solid black;
+    border : 1px solid yellow;
     width : 120px;
     padding-left : 10px;
     padding-right : 10px;
@@ -67,6 +68,7 @@
 
 .lineup_time{
     font-size : 20pt;
+    margin-left : 20px;
 }
 
 .lineup_place{
@@ -77,4 +79,15 @@
     margin-left: 20px;
 }
 
+.lineup_time, .day, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+    color: yellow;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.lineup_wrap{
+    background-color : black;
+    z-index : 3;
+}
+
 /*================================ lineup===================================================================*/
+
