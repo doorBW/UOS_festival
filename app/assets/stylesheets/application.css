@@ -13,3 +13,68 @@
  *= require_tree .
  *= require_self
  */
+
+/*================================ lineup===================================================================*/
+
+
+/*================header=============================*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.lineup_header{
+    display : flex;
+    align-items: center;
+    margin : 20px;
+}
+
+.lineup_uos{
+    width: 100%;
+    font-size : 30pt;
+    padding-left : 20px;
+}
+
+
+.lineup_logo_img{
+    width:20%;
+    height: auto;
+}
+
+.lineup_wrap{
+    /*border : 1px solid black;*/
+    /*border-radius: 5%;*/
+    margin : 30px;
+    padding : 20px;
+    padding-top: 30px;
+}
+
+.day{
+    font-size: 20pt;
+    border : 1px solid black;
+    width : 120px;
+    padding-left : 10px;
+    padding-right : 10px;
+    text-align: center;
+}
+
+.singer{
+    font-size : 25pt;
+    /*margin : 10px;*/
+}
+
+.lineup_time{
+    font-size : 20pt;
+}
+
+.lineup_place{
+    font-size : 25pt;
+}
+
+.lineup_singer{
+    margin-left: 20px;
+}
+
+/*================================ lineup===================================================================*/
