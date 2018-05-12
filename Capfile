@@ -19,7 +19,7 @@ require 'capistrano/rails'
 require 'capistrano/passenger'
 require 'capistrano/rvm'
 set :rvm_type, :user
-set :rvm_ruby_version, '2.4.1'
+set :rvm_ruby_version, '2.4.1-p111'
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
