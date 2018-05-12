@@ -5,12 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  
     <style>
+    
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
+      body{
+        background-color: black;
+        height:-webkit-fill-available;
+      }
       .nevi{
         display : flex;
         position: fixed;
         height: 200px;
-        background-color : white;
         bottom: 5%;
         width: 96%;
         justify-content: space-around;
@@ -22,6 +29,7 @@
         border-radius: 30px;
         background-repeat: no-repeat;
         background-size: cover;
+        border: 10px solid white;
       }
 
       .nimg1{
@@ -45,6 +53,7 @@
         opacity: 0.9;
       }
   </style>
+
 
 
 </head>

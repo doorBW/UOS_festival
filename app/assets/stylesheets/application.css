@@ -14,3 +14,83 @@
  *= require_self
  */
 
+/*================================ lineup===================================================================*/
+
+
+/*================lineup_header=============================*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.lineup_header{
+    display : flex;
+    align-items: center;
+    margin : 20px;
+}
+
+.lineup_uos{
+    width: 100%;
+    font-size : 30pt;
+    padding-left : 20px;
+}
+
+/*======================lineup_main========================*/
+
+.lineup_logo_img{
+    width:20%;
+    height: auto;
+}
+main{
+    height: -webkit-fill-available;
+}
+.lineup_main{
+    /*border : 1px solid black;*/
+    /*border-radius: 5%;*/
+    height: 100%;
+    margin : 30px;
+    padding : 20px;
+    padding-top: 30px;
+}
+
+.day{
+    font-size: 20pt;
+    border : 1px solid yellow;
+    width : 120px;
+    padding-left : 10px;
+    padding-right : 10px;
+    text-align: center;
+}
+
+.singer{
+    font-size : 25pt;
+    /*margin : 10px;*/
+}
+
+.lineup_time{
+    font-size : 20pt;
+    margin-left : 20px;
+}
+
+.lineup_place{
+    font-size : 25pt;
+}
+
+.lineup_singer{
+    margin-left: 20px;
+}
+
+.lineup_time, .day, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+    color: yellow;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.lineup_wrap{
+    background-color : black;
+    z-index : 3;
+}
+
+/*================================ lineup===================================================================*/
+
