@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_db'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.6'

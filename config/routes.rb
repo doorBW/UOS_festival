@@ -3,16 +3,9 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   get 'home/index'
   root 'home#index'
-  
+  get '/festival' => 'home#festival'
   get '/festival/booth' => 'home#booth'
-  
-  get '/gestival/lineup' => 'home#lineup'
-  
-  
-  
-  
-
-
+  get '/festival/lineup' => 'home#lineup'
   get '/festival/event' => 'home#event'
   get '/festival/schedule' => 'home#schedule'
   

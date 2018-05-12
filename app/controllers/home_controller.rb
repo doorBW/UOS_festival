@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+  def festival
+  end
+  
   def index
   end
   
