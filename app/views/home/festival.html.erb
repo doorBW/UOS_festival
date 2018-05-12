@@ -1,17 +1,48 @@
-<h1>페스티벌 페이지 입니다.</h1>
-<br>
-
-<a href='/'>돌아가기</a>
-
-  <div class="nevi">
-    <a href = "/"><div class="nev_block nimg1">
-    </div></a>
-    <a href = "/festival/lineup"> <div class="nev_block nimg2">
-    </div></a>
-    <a href = "/festival/booth"><div class="nev_block nimg3">
-    </div></a>
-    <a href = "/festival/schedule"><div class="nev_block nimg4">
-    </div></a>
-    <a href = "/festival/event"><div class="nev_block nimg5">
-    </div></a>
-  </div>
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="wrap">
+        <div class="logo"><img src="<%= asset_path 'logo.png' %>" class="festival_logo_1"></img></div>
+        <div class="festival_day"><span>2018.05.15~2018.05.18</span></div>
+        <div class="festival_menu_schedule">
+            <a href="/festival/schedule"><img src="<%= asset_path 'schedule_menu.png' %>" alt="image1" class="festival_schedule_1"></a>
+            <div class="festival_image_wrap">
+                <div class="festival_click"><p>Click! Click!</p></div>
+                <div class="festival_arrow"><img src="<%= asset_path 'arrow.png' %>" alt="" class="festival_arrow_1"></div>
+                <div class="festival_arrow"><img src="<%= asset_path 'arrow.png' %>" alt="" class="festival_arrow_2"></div>
+            </div>
+        </div>
+    
+        <div class="festival_menu_booth">
+        	<div class="festival_image_wrap_2">
+        		<div class="word"><img src="<%= asset_path 'word.png' %>" alt="" class="word"></div>
+            	<a href="/festival/booth"><img src="<%= asset_path 'position_menu.png' %>" alt="image2" class="festival_booth_1"></a>
+            </div>
+        </div>
+    
+        <div class="festival_menu_line_up">
+        	<div class="festival_image_wrap_3">
+            <a href="/festival/lineup"><img src="<%= asset_path 'lineup_menu.png' %>" alt="image3" class="festival_line_up_1"></a>
+            <div class="singer"><img src="<%= asset_path 'singer.png' %>" alt="" class="festival_singer_1"></div>
+            </div>
+        </div>
+        
+        <div class="festival_menu_event">
+        	<div class="festival_image_wrap_4">
+        		<div class="people"><img src="<%= asset_path 'people.png' %>" alt="" class="festival_people_1"></div>
+            	<a href="/festival/event"><img src="<%= asset_path 'event_menu.png' %>" alt="image4" class="festival_event_1"></a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class='event_footer' style='padding-bottom:30px'>
+      <hr>
+      <img src='<%= asset_path 'UOS_LIKELION_ye.png' %> ' class='uos_likelion_logo'></img>
+      <br>페이지 제작: 서울시립대학교 멋쟁이사자처럼<br>
+      문범우, 강솔, 박건주, 박민승, 신민정, 차상원, 최희재<br>
+      위의 모든 내용은 서울시립대학교 총학생회 페이스북에서 참고하였습니다.<br>
+      <span style='font-size:20px'>(출처: https://www.facebook.com/2018-서울시립대학교-축제-100th-to-the-Future-607287032763488/)<span><br>
+      
+    </footer>
+</body>
+</html>
