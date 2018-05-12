@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
     <style>
-      body {
-        height : 1000px;
-      }
       .nevi{
         display : flex;
         position: fixed;
@@ -25,29 +26,26 @@
 
       .nimg1{
         background-image: url("/gp1.jpg");
-        opacity: 0.6;
+        opacity: 0.8;
       }
       .nimg2{
         background-image: url('/img1.png');
-        opacity: 0.6;
+        opacity: 0.8;
       }
       .nimg3{
         background-image: url('/img2.png');
-        opacity: 0.6;
+        opacity: 0.8;
       }
       .nimg4{
         background-image: url('/img3.png');
-        opacity: 0.6;
+        opacity: 0.8;
       }
       .nimg5{
         background-image: url('/img4.png');
-        opacity: 0.6;
+        opacity: 0.8;
       }
   </style>
-  <title>Workspace</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
 
 </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -55,7 +53,6 @@
     $(document).ready(function(){
       $("body").fadeIn(1000);
       $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").mouseover(function(){
-        $(this).css("font-weight", "bolder");
         // $(this).css("opacity", "1.0");
         $(this).animate({
         opacity: '1.0',
@@ -83,17 +80,17 @@
 
 <!-- 네비 bar -->
   <div class="nevi">
-    <div class="nev_block nimg1">
-    </div>
-    <div class="nev_block nimg2">
-    </div>
-    <div class="nev_block nimg3">
-    </div>
-    <div class="nev_block nimg4">
-    </div>
-    <div class="nev_block nimg5">
-      5
-    </div>
+    
+    <a href = "/"><div class="nev_block nimg1">
+    </div></a>
+    <a href = "/festival/lineup"> <div class="nev_block nimg2">
+    </div></a>
+    <a href = "/festival/booth"><div class="nev_block nimg3">
+    </div></a>
+    <a href = "/festival/schedule"><div class="nev_block nimg4">
+    </div></a>
+    <a href = "/festival/event"><div class="nev_block nimg5">
+    </div></a>
   </div>
 
 </body>
