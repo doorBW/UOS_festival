@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/festival/lineup' => 'home#lineup'
   get '/festival/event' => 'home#event'
   get '/festival/schedule' => 'home#schedule'
+  get '/developer' => 'home#developer'
 end

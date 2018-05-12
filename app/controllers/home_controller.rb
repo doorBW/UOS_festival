@@ -17,6 +17,8 @@ class HomeController < ApplicationController
   def event
   end
   
+  def developer
+  end
   
 
 end

@@ -16,7 +16,27 @@
 
 /*================================ lineup===================================================================*/
 
+a{
+        color: black;
+        text-decoration: none;
+}
+      a:visited{
+        color: black;
+}
+      a:hover{
+        color: black;
+}
 
+.developer_info{
+    font-size: 60px;
+    color: yellow;
+    margin: 10px;
+    padding-top: 50px;
+    text-align: center;
+    font-family:'drfont_daraehand';
+}
+
+@font-face { font-family: 'drfont_daraehand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff'); font-weight: normal; font-style: normal; }
 /*================lineup_header=============================*/
 .clearfix::after {
     content: "";
@@ -33,22 +53,38 @@
 
 .lineup_uos{
     width: 100%;
-    font-size : 30pt;
+    font-size : 65px;
     padding-left : 20px;
 }
 
+.lineup_uos_font{
+    font-family: 'drfont_daraehand';
+
+}
+
 /*======================lineup_main========================*/
+
+.lineup_line{
+    background-color : yellow;
+    border-color : yellow;
+}
 
 .lineup_logo_img{
     width:20%;
     height: auto;
 }
 main{
-    height: -webkit-fill-available;
+    /*height: -webkit-fill-available;*/
 }
+
+.lineup_back{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.8)),
+        url('/back_to_the_future.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .lineup_main{
-    /*border : 1px solid black;*/
-    /*border-radius: 5%;*/
     height: 100%;
     margin : 30px;
     padding : 20px;
@@ -82,15 +118,68 @@ main{
     margin-left: 20px;
 }
 
-.lineup_time, .day, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+.lineup_time, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
     color: yellow;
     font-family: 'Sunflower', sans-serif;
 }
 
+.lineup_uos, .day{
+    color: yellow;
+}
+
 .lineup_wrap{
     background-color : black;
-    z-index : 3;
+    
 }
+
+.booth_img{
+    padding-top: 30px;
+    width: 850px;
+    height: auto;
+}
+
+.list{
+    background-color: black;
+    font-family: 'Do Hyeon';
+    color: rgb(235,214,41);
+    justify-content: center;
+    bottom:0;
+    display:flex;
+    font-size: 30pt;
+                
+}
+
 
 /*================================ lineup===================================================================*/
 
+
+/*===================모달=========================*/
+/*.white_content {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    background: rgba(0, 0, 0, 0.8);*/
+/*    opacity:0;*/
+/*    -webkit-transition: opacity 400ms ease-in;*/
+/*    -moz-transition: opacity 400ms ease-in;*/
+/*    transition: opacity 400ms ease-in;*/
+/*    pointer-events: none;*/
+/*}*/
+/*.white_content:target {*/
+/*    opacity:1;*/
+/*    pointer-events: auto;*/
+/*}*/
+/*.white_content > div {*/
+/*	position: absolute;*/
+/*	top: 25%;*/
+/*	left: 25%;*/
+/*	width: 50%;*/
+/*	height: 50%;*/
+/*	padding: 16px;*/
+/*	border: 16px solid orange;*/
+/*	background-color: white;*/
+/*	overflow: auto;	*/
+/*}*/
+/*===================모달=========================*/

@@ -11,19 +11,19 @@ body {
 }
 
 // event CSS start
-.event_head_item{
+.dev_person_head{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.event_header{
-    font-size: 80px;
+.dev_header{
+    font-size: 60px;
     color: yellow;
     margin: 0;
     text-align: center;
     font-family:'drfont_daraehand';
 }
-.event_item{
+.dev_person{
     background: white;
     margin-top: 50px;
     margin-left: 30px;
@@ -33,30 +33,37 @@ body {
     height: auto;
     padding: 15px;
 }
-.event_logo_img{
-    height: 100px;
-    width: 100px;
+.dev_person_img{
+    height: 200px;
+    width: 200px;
 }
-.event_item_name{
+.dev_person_name{
     color: black;
     font-size: 50px;
     margin: 0;
     font-family: 'Do Hyeon';
     line-height: 1;
 }
-.event_item_info{
+.dev_person_info{
     color: gray;
     font-size: 45px;
     margin: 0;
     font-family: 'Do Hyeon';
     line-height: 1;
 }
-.event_item_content{
+.dev_person_content{
     font-size: 40px;
+    margin: 0;
+    color: black;
+    font-family: 'Sunflower';
+}
+.dev_person_content_another{
+    font-size: 33px;
     margin: 0;
     padding: 10px;
     color: black;
     font-family: 'Sunflower';
+    text-align: center;
 }
 .event_footer{
     padding-bottom: 230px;
