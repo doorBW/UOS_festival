@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114743443-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114743443-2');
+  </script>
     <title>2018_UOS_FESTIVAL</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -25,7 +34,7 @@
         background-color: black;
         height: 100%;
       }
-      
+
       .nevi{
         display : flex;
         position: fixed;
@@ -64,19 +73,19 @@
         background-image: url('/img4.png');
         opacity: 0.9;
       }
-      
-      
+
+
       /*스케줄 페이지*/
       .sche_main{
         color: yellow;
         line-height: 2.5;
         font-family: 'Do Hyeon', sans-serif;
       }
-      
+
       .sche_day{
-        
+
       }
-      
+
       .sche_day_title{
         display: black;
         margin: 0 auto;
@@ -123,7 +132,7 @@
         margin-top: 20pt;
         font-size: 25pt;
       }
-      
+
       .sche_content{
         font-size: 20pt;
         margin-bottom: 20pt;
@@ -132,15 +141,6 @@
         text-align: center;
       }
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114743443-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114743443-2');
-  </script>
 </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
@@ -152,7 +152,7 @@
           width: '180px'
         });
       });
-     
+
     })
   </script>
 </script>
