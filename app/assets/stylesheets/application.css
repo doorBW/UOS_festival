@@ -27,6 +27,14 @@ a{
         color: black;
 }
 
+.every_header{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Do Hyeon';
+    line-height: 0.9;
+}
+
 .developer_info{
     font-size: 60px;
     color: yellow;
