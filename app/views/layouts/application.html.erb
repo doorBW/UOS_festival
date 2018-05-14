@@ -8,29 +8,35 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <script src="jquery-3.3.1.min.js"></script>
+    <!--<script src="jquery-3.3.1.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--<script src="static/js/libs/bootstrap/bootstrap.min.js"></script>-->
+
 
     <style>
-    
-    
-        @import url('https://fonts.googleapis.com/css?family=Chicle');
+    @font-face { font-family: 'drfont_daraehand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff'); font-weight: normal; font-style: normal; }
+    @font-face { font-family: 'Swagger'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Swagger.woff') format('woff'); font-weight: normal; font-style: normal; }
+    @import url('https://fonts.googleapis.com/css?family=Chicle');
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+    @import url('https://fonts.googleapis.com/css?family=Hi+Melody|Nanum+Pen+Script');
     .clearfix::after {
     content: "";
     clear: both;
     display: table;
+    }
+
+  
     
-    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
       /**{*/
       /*  background-color: black;*/
       /*}*/
-
 
       html{
         height: -webkit-fill-available;
         background-color: black;
       }
-
-
+      
       body{
         background-color: black;
         height: 100%;
@@ -44,14 +50,16 @@
         width: 96%;
         justify-content: space-around;
         text-align: center;
+        z-index:10;
       }
       .nev_block {
-        width: 150px;
-        height: 150px;
-        border-radius: 30px;
+        width: 120px;
+        height: 120px;
+        border-radius: 25px;
         background-repeat: no-repeat;
         background-size: cover;
         border: 5px solid white;
+        
       }
 
       .nimg1{
@@ -75,6 +83,11 @@
         opacity: 0.9;
       }
       
+      /* 푸드트럭 추가 */
+      .nimg6{
+        background-image: url('/img5.png');
+        opacity: 0.9;
+      }
       
       /*스케줄 페이지*/
       .sche_main{
@@ -115,18 +128,22 @@
         height: 250px;
         flex-direction: column;
         align-items : center;
+        background-repeat : no-repeat; 
+        background-size : cover;
         justify-content : space-around;
         border-radius : 100%;
         border: 5px solid white;
       }
       .sche_content_box4{
         display: flex;
-        width:  220px;
-        height: 220px;
+        width:  200px;
+        height: 200px;
         flex-direction: column;
         align-items : center;
         justify-content : space-around;
         border-radius : 100%;
+        background-repeat : no-repeat; 
+        background-size : contain;
         border: 5px solid white;
       }
       .sche_time{
@@ -134,38 +151,35 @@
         font-size: 25pt;
       }
       
+      .sche_time4{
+        margin-top: 15pt;
+        font-size: 22pt;
+      }
+      
       .sche_content{
-        font-size: 20pt;
+        font-size: 22pt;
         margin-bottom: 20pt;
         line-height: 1.2;
         color : white;
         text-align: center;
       }
+      
   </style>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114743443-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-114743443-2');
-  </script>
-</head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
   <script>
     $(document).ready(function(){
-      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").click(function(){
+      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5, nimg6").click(function(){
         $(this).animate({
           opacity: '1.0',
-          height: '180px',
-          width: '180px'
+          height: '150px',
+          width: '150px'
         });
       });
-     
     })
   
-     $(document).ready(function(){
+    $(document).ready(function(){
         $(".food_food1").click(function(){
             
             $(".food_food1").animate({
@@ -263,14 +277,13 @@
             });
         });
 
-     });
-</script>
-</script>
+    });
+    </script>
+</head>
 
 <body>
 <!-- 네비 bar -->
-<div style='text-align:center; margin-top:3px; padding:0px;'><span class='every_header'>해당 페이지는 서울시립대학교 멋쟁이사자처럼에 의해 제작되었으며<br>
-                           서울시립대학교 총학생회와는 전혀 무관합니다.</span></div>
+
 
 <%= yield %>
 

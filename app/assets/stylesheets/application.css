@@ -15,15 +15,18 @@
  */
 
 /*================================ lineup===================================================================*/
+@font-face { font-family: 'drfont_daraehand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Swagger'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Swagger.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 a{
         color: black;
         text-decoration: none;
 }
-      a:visited{
+a:visited{
         color: black;
 }
-      a:hover{
+a:hover{
         color: black;
 }
 
@@ -44,8 +47,9 @@ a{
     font-family:'drfont_daraehand';
 }
 
-@font-face { font-family: 'drfont_daraehand'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 /*================lineup_header=============================*/
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -97,6 +101,8 @@ main{
     margin : 30px;
     padding : 20px;
     padding-top: 30px;
+    font-family: 'Swagger',sans-serif;
+    font-weight: 700;
 }
 
 .day{
@@ -160,34 +166,11 @@ main{
 
 /*================================ lineup===================================================================*/
 
+/*===================모달창-table=========================*/
+
+/*===================모달창=========================*/
+
 
 /*===================모달=========================*/
-/*.white_content {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    background: rgba(0, 0, 0, 0.8);*/
-/*    opacity:0;*/
-/*    -webkit-transition: opacity 400ms ease-in;*/
-/*    -moz-transition: opacity 400ms ease-in;*/
-/*    transition: opacity 400ms ease-in;*/
-/*    pointer-events: none;*/
-/*}*/
-/*.white_content:target {*/
-/*    opacity:1;*/
-/*    pointer-events: auto;*/
-/*}*/
-/*.white_content > div {*/
-/*	position: absolute;*/
-/*	top: 25%;*/
-/*	left: 25%;*/
-/*	width: 50%;*/
-/*	height: 50%;*/
-/*	padding: 16px;*/
-/*	border: 16px solid orange;*/
-/*	background-color: white;*/
-/*	overflow: auto;	*/
-/*}*/
+
 /*===================모달=========================*/
