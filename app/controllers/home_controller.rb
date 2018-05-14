@@ -17,6 +17,9 @@ class HomeController < ApplicationController
   def event
   end
   
+  def food
+  end
+  
   def developer
   end
   
