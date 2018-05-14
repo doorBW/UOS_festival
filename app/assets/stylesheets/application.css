@@ -27,6 +27,17 @@ a:hover{
         color: black;
 }
 
+a.modalLink{
+        color: yellow;
+        text-decoration: none;
+}
+a.modalLink:visited{
+        color: yellow;
+}
+a.modalLink:hover{
+        color: yellow;
+}
+
 .every_header{
     color: white;
     text-align: center;
@@ -165,10 +176,68 @@ main{
 /*================================ lineup===================================================================*/
 
 /*===================모달창-table=========================*/
+.lineup_body_wrap{
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+      }
 
+      .lineup_table_title{
+        font-family: 'Swagger',sans-serif;
+        font-weight: 500;
+        color:yellow;
+        font-size: 30pt;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .lineup_table{
+        background-color: black;
+      }
+
+       td{
+        width:30%;
+      }
+      .lineup_explain{
+        /*border: 2px solid yellow;*/
+      }
+
+      .lineup_img{
+        width:100%;
+        height: auto;
+      }
 /*===================모달창=========================*/
 
 
 /*===================모달=========================*/
+#mask {  
+  position:absolute;  
+  left:0;
+  top:0;
+  z-index:9000;  
+  background-color:#000;  
+  display:none;  
+}
+
+#modalLayer{
+    display:none; 
+    position:relative;
+}
+#modalLayer .modalContent{
+    width:900px; 
+    padding:20px; 
+    border:1px solid black; 
+    position:relative; 
+    left:50%;
+    top: -2100px;
+    z-index:9001; 
+    background:none;
+}
+#modalLayer .modalContent button{
+    position:absolute; 
+    right:0; top:0%; 
+    cursor:pointer;
+}
 
 /*===================모달=========================*/

@@ -15,3 +15,32 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function(){
+  var modalLayer = $("#modalLayer");
+  var modalLink = $(".modalLink");
+  var modalCont = $(".modalContent");
+  var lineup = $(".lineup_wrap");
+  var marginLeft = modalCont.outerWidth()/2;
+  var marginTop = modalCont.outerHeight()/2;
+  var maskHeight = $(document).height();  
+  var maskWidth = $(window).width();  
+
+
+  modalLink.click(function(){
+    modalLayer.fadeIn("slow");
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    // $('#mask').fadeIn(1000);
+    $('#mask').fadeTo("slow",0.8); 
+    // lineup.fadeout("slow");
+    modalCont.css({"margin-top" : -marginTop, "margin-left" : -marginLeft});
+    $(this).blur();
+    $(".modalContent > a").focus(); 
+    return false;
+  });
+
+  $(".modalContent > button").click(function(){
+    $('#mask').fadeOut(1000);
+    modalLayer.fadeOut("slow");
+    modalLink.focus();
+  });		
+});

@@ -1,9 +1,11 @@
+
 <div class="lineup_wrap">
+    <div id="mask"></div>
     <header>
         <div class="lineup_header clearfix">
-            <!--<p class="lineup_100th">100th to the FUTURE</p>-->
-            <img class = "lineup_logo_img"src="<%= asset_path 'logo.png' %>"></img>
-            <div class="lineup_uos"><span class='lineup_uos_font'>2018 시립대 축제 라인업</span></div>
+            <img class = "lineup_logo_img"src="<%= asset_path 'logo.png' %>"/>
+            <div class="lineup_uos"><span class='lineup_uos_font'><a href="#modalLayer" class="modalLink">2018 시립대 축제 라인업</a></span></div>
+            
         </div>
         
     </header>
@@ -103,3 +105,52 @@
     })
     </script>
 <!-------------------------------------------------------- 모달창 ------------------------------------------->
+
+<div id="modalLayer">
+    <div class="modalContent">
+        <div class="lineup_body_wrap">
+      <p class="lineup_table_title">서울시립대 메인스테이지 라인업 공개</p>
+      <table width="1000"height="1000"class="lineup_table">
+        <tbody>
+          <tr>
+            <td class="lineup_explain"><img class="lineup_img" src="/assets/performance.jpg" alt=""></td>
+            <td colspan="2" rowspan="2"><img class="lineup_img" src="/assets/10cm.png" alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img"src="/assets/미교1.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td colspan="2" rowspan="2"><img class="lineup_img" src="/assets/오마이걸.jpg" alt=""></td>
+            <td class="lineup_explain"><img class="lineup_img" src="/assets/edm.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img" src="/assets/박명수.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img class="lineup_img" src="/assets/팔로알토.jpg" alt=""></td>
+            <td><img class="lineup_img"src="/assets/레디.jpg" alt=""></td>
+            <td><img class="lineup_img"src="/assets/허클베리피.jpg" alt=""></td>
+          </tr>
+
+
+          <tr>
+            <td rowspan="2" colspan="2"><img class="lineup_img" src="/assets/헤이즈.jpg" alt=""></td>
+            <td><img class="lineup_img"src="/assets/건민희도.jpg" alt=""></td>
+          </tr>
+
+          <tr>
+            <td><img class="lineup_img"src="/assets/소야.jpg" alt=""></td>
+          </tr>
+
+          <tr>
+            <td><img class="lineup_img"src="/assets/딥플로우.jpg" alt=""></td>
+            <td><img class="lineup_img"src="/assets/던밀스.jpg" alt=""></td>
+            <td><img class="lineup_img"src="/assets/넉살.jpg" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        
+        <button type="button">닫기</button>
+    </div>
+</div>
