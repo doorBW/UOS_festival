@@ -1,47 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114743443-2"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114743443-2');
-  </script>
-    <title>2018_UOS_FESTIVAL</title>
+    <title>Schedule</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="mobile-web-app-capable" content="yes">
 
-  <link rel="icon" sizes="192x192" href="logo.png">
-  <link rel="shortcut icon" href="logo.jpg">
-  <link rel="apple-touch-icon" href="logo.jpg">
-  <link rel="apple-touch-icon" sizes="152x152" href="logo.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="logo.jpg">
-  <link rel="apple-touch-icon" sizes="167x167" href="logo.jpg">
+  
     <style>
-
+    
     @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Sunflower:300');
       /**{*/
       /*  background-color: black;*/
       /*}*/
 
-
       html{
         height: -webkit-fill-available;
         background-color: black;
       }
-
-
+      
       body{
         background-color: black;
         height: 100%;
       }
-
+      
       .nevi{
         display : flex;
         position: fixed;
@@ -52,16 +34,16 @@
         text-align: center;
       }
       .nev_block {
-        width: 150px;
-        height: 150px;
-        border-radius: 30px;
+        width: 120px;
+        height: 120px;
+        border-radius: 25px;
         background-repeat: no-repeat;
         background-size: cover;
         border: 5px solid white;
       }
 
       .nimg1{
-        background-image: url("/goto_home_logo.png");
+        background-image: url("/gp1.jpg");
         opacity: 0.9;
       }
       .nimg2{
@@ -80,19 +62,24 @@
         background-image: url('/img4.png');
         opacity: 0.9;
       }
-
-
+      
+      /* 푸드트럭 추가 */
+      .nimg6{
+        background-image: url('/img5.png');
+        opacity: 0.9;
+      }
+      
       /*스케줄 페이지*/
       .sche_main{
         color: yellow;
         line-height: 2.5;
         font-family: 'Do Hyeon', sans-serif;
       }
-
+      
       .sche_day{
-
+        
       }
-
+      
       .sche_day_title{
         display: black;
         margin: 0 auto;
@@ -121,53 +108,64 @@
         height: 250px;
         flex-direction: column;
         align-items : center;
+        background-repeat : no-repeat; 
+        background-size : cover;
         justify-content : space-around;
         border-radius : 100%;
         border: 5px solid white;
       }
       .sche_content_box4{
         display: flex;
-        width:  220px;
-        height: 220px;
+        width:  200px;
+        height: 200px;
         flex-direction: column;
         align-items : center;
         justify-content : space-around;
         border-radius : 100%;
+        background-repeat : no-repeat; 
+        background-size : contain;
         border: 5px solid white;
       }
       .sche_time{
         margin-top: 20pt;
         font-size: 25pt;
       }
-
+      
+      .sche_time4{
+        margin-top: 15pt;
+        font-size: 22pt;
+      }
+      
       .sche_content{
-        font-size: 20pt;
+        font-size: 22pt;
         margin-bottom: 20pt;
         line-height: 1.2;
         color : white;
         text-align: center;
       }
+      
   </style>
+
+
+
 </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5").click(function(){
+      $(".nimg1, .nimg2, .nimg3, .nimg4, .nimg5, nimg6").click(function(){
         $(this).animate({
           opacity: '1.0',
-          height: '180px',
-          width: '180px'
+          height: '150px',
+          width: '150px'
         });
       });
-
     })
   </script>
 </script>
 
 <body>
 <!-- 네비 bar -->
-<div style='text-align:center; margin-top:3px; padding:0px;'><span class='every_header'>해당 페이지는 서울시립대학교 멋쟁이사자처럼에 의해 제작되었으며<br>
-                           서울시립대학교 총학생회와는 전혀 무관합니다.</span></div>
+
 
 <%= yield %>
 

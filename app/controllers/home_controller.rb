@@ -20,5 +20,7 @@ class HomeController < ApplicationController
   def developer
   end
   
+  def foodtruck
+  end
 
 end
