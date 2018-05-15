@@ -143,7 +143,7 @@ main{
     margin-left: 20px;
 }
 
-.lineup_time, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back{
+.lineup_time, .singer, .lineup_uos, .lineup_line, .lineup_place, .lineup_back, .day{
     color: yellow;
     font-family: 'Sunflower', sans-serif;
 }
