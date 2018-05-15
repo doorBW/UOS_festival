@@ -74,12 +74,13 @@ a.modalLink:hover{
 
 .lineup_uos{
     width: 100%;
-    font-size : 65px;
-    padding-left : 20px;
+    font-size:15pt;
+    padding-left : 10px;
 }
 
 .lineup_uos_font{
     font-family: 'drfont_daraehand';
+    font-size : 65px;
 
 }
 
@@ -94,6 +95,7 @@ a.modalLink:hover{
     width:20%;
     height: auto;
 }
+
 main{
     /*height: -webkit-fill-available;*/
 }
